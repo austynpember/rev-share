@@ -37,7 +37,7 @@ contract('RevShare', function(accounts) {
   it("should split funds evenly", function(done) {
     var rs = RevShare.deployed();
     var owner1 = "0xf6549feb3bc3dcfc24b7b2b43aabb1b53169fb06";
-		var owner2 = "0x6c21c01e97374f324f863f73112207d4122eb08b";
+	var owner2 = "0x6c21c01e97374f324f863f73112207d4122eb08b";
     var amount = web3.toWei(1, "ether");
     var owner1_balance_before = web3.eth.getBalance(owner1).toNumber();
     var owner2_balance_before = web3.eth.getBalance(owner2).toNumber();

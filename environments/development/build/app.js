@@ -5735,11 +5735,11 @@ var Pudding =
 (function() {
 
   var contract_data = {
-    abi: [{"constant":true,"inputs":[],"name":"creator","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"type":"function"},{"constant":true,"inputs":[],"name":"owner2","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":true,"inputs":[],"name":"owner1","outputs":[{"name":"","type":"address"}],"type":"function"},{"inputs":[],"type":"constructor"}],
-    binary: "606060405260008054600160a060020a0319908116331790915560018054821673f6549feb3bc3dcfc24b7b2b43aabb1b53169fb0617905560028054909116736c21c01e97374f324f863f73112207d4122eb08b179055610146806100646000396000f3606060405236156100405760e060020a600035046302d05d3f811461009357806341c0e1b5146100a557806352709725146100cd57806373688914146100df575b6100f16000600160a060020a03301631816002820681146100645760001991909101905b506001546002820490600160a060020a03168382606082818181858883f193505050501515610103575b505090565b61012f600054600160a060020a031681565b61014260005433600160a060020a039081169116141561014457600054600160a060020a0316ff5b61012f600254600160a060020a031681565b61012f600154600160a060020a031681565b60408051918252519081900360200190f35b604051600254600160a060020a0316908490839082818181858883f19350505050151561008e57610002565b600160a060020a03166060908152602090f35b005b56",
-    unlinked_binary: "606060405260008054600160a060020a0319908116331790915560018054821673f6549feb3bc3dcfc24b7b2b43aabb1b53169fb0617905560028054909116736c21c01e97374f324f863f73112207d4122eb08b179055610146806100646000396000f3606060405236156100405760e060020a600035046302d05d3f811461009357806341c0e1b5146100a557806352709725146100cd57806373688914146100df575b6100f16000600160a060020a03301631816002820681146100645760001991909101905b506001546002820490600160a060020a03168382606082818181858883f193505050501515610103575b505090565b61012f600054600160a060020a031681565b61014260005433600160a060020a039081169116141561014457600054600160a060020a0316ff5b61012f600254600160a060020a031681565b61012f600154600160a060020a031681565b60408051918252519081900360200190f35b604051600254600160a060020a0316908490839082818181858883f19350505050151561008e57610002565b600160a060020a03166060908152602090f35b005b56",
-    address: "0xce1fe29513f9bf8bfd5e69ca82d312708ff9ca06",
-    generated_with: "2.0.8",
+    abi: [{"constant":true,"inputs":[],"name":"creator","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"_owner1","type":"address"},{"name":"_owner2","type":"address"}],"name":"setOwners","outputs":[{"name":"success","type":"bool"}],"type":"function"},{"constant":false,"inputs":[{"name":"a_portion","type":"uint256"},{"name":"b_portion","type":"uint256"}],"name":"setProportions","outputs":[{"name":"success","type":"bool"}],"type":"function"},{"constant":true,"inputs":[],"name":"portionB","outputs":[{"name":"","type":"uint256"}],"type":"function"},{"constant":true,"inputs":[],"name":"owner2","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":true,"inputs":[],"name":"owner1","outputs":[{"name":"","type":"address"}],"type":"function"},{"constant":true,"inputs":[],"name":"portionA","outputs":[{"name":"","type":"uint256"}],"type":"function"},{"inputs":[],"type":"constructor"}],
+    binary: "606060405260008054600160a060020a031916331790556101d3806100246000396000f36060604052361561006c5760e060020a600035046302d05d3f811461009f57806341c0e1b5146100b157806348405b49146100d9578063497af9d01461011657806351025b9e146101305780635270972514610139578063736889141461014b578063f5b0b70a1461015d575b6101666001546000906002340490600160a060020a03168282606082818181858883f19350505050151561018057610002565b6101b2600054600160a060020a031681565b6101c560005433600160a060020a03908116911614156101d157600054600160a060020a0316ff5b6101666004356024356001805473ffffffffffffffffffffffffffffffffffffffff19908116841782556002805491909116831790555b92915050565b610166600435602435600382905560048190556001610110565b6101c760045481565b6101b2600254600160a060020a031681565b6101b2600154600160a060020a031681565b6101c760035481565b60408051918252519081900360200190f35b600191505090565b600254604051600160a060020a0391909116908390348490039082818181858883f19350505050151561017857610002565b600160a060020a03166060908152602090f35b005b6060908152602090f35b56",
+    unlinked_binary: "606060405260008054600160a060020a031916331790556101d3806100246000396000f36060604052361561006c5760e060020a600035046302d05d3f811461009f57806341c0e1b5146100b157806348405b49146100d9578063497af9d01461011657806351025b9e146101305780635270972514610139578063736889141461014b578063f5b0b70a1461015d575b6101666001546000906002340490600160a060020a03168282606082818181858883f19350505050151561018057610002565b6101b2600054600160a060020a031681565b6101c560005433600160a060020a03908116911614156101d157600054600160a060020a0316ff5b6101666004356024356001805473ffffffffffffffffffffffffffffffffffffffff19908116841782556002805491909116831790555b92915050565b610166600435602435600382905560048190556001610110565b6101c760045481565b6101b2600254600160a060020a031681565b6101b2600154600160a060020a031681565b6101c760035481565b60408051918252519081900360200190f35b600191505090565b600254604051600160a060020a0391909116908390348490039082818181858883f19350505050151561017857610002565b600160a060020a03166060908152602090f35b005b6060908152602090f35b56",
+    address: "0x700f5e6f13afd7c186d6d69a91518a617f98738b",
+    generated_with: "2.0.9",
     contract_name: "RevShare"
   };
 
@@ -5802,9 +5802,19 @@ var Pudding =
 var accounts;
 var account;
 var balance;
+var owner1;
+var owner2;
 
-function setStatus(message) {
+/**
+ * Set a message in the status bar
+ * @param message The Message to place in the status bar
+ * @param type The kind of message to place, based on bootstrap alerts (http://getbootstrap.com/components/#alerts)
+ */
+function setStatus(message, type="info") {
   var status = document.getElementById("status");
+  $("#status").removeClass (function (index, css) {
+    return (css.match (/(^|\s)alert-\S+/g) || []).join(' ');
+  }).addClass("alert-" + type);
   status.innerHTML = message;
 };
 
@@ -5815,10 +5825,130 @@ function setAddress() {
 
 function refreshBalances() {
   document.getElementById("c_balance").innerHTML = web3.fromWei(web3.eth.getBalance(RevShare.deployed_address), "ether").toFixed(5);
-  document.getElementById("a_balance").innerHTML = web3.fromWei(web3.eth.getBalance(document.getElementById("a_address").innerHTML), "ether").toFixed(5);
-  document.getElementById("b_balance").innerHTML = web3.fromWei(web3.eth.getBalance(document.getElementById("b_address").innerHTML), "ether").toFixed(5);
+  document.getElementById("a_balance").innerHTML = web3.fromWei(web3.eth.getBalance(document.getElementById("a_address").value), "ether").toFixed(5);
+  document.getElementById("b_balance").innerHTML = web3.fromWei(web3.eth.getBalance(document.getElementById("b_address").value), "ether").toFixed(5);
   document.getElementById("cb_balance").innerHTML = web3.fromWei(web3.eth.getBalance(web3.eth.coinbase), "ether").toFixed(5)+ " ETH";
 };
+
+/*function getOwners(){
+  var revshare = RevShare.deployed();
+  revshare.getOwners.call(RevShare.deployed_address, {from:account}).then(function(data){
+  	document.getElementById("a_address").value = data[0].valueOf();
+  	document.getElementById("b_address").value = data[1].valueOf();
+  }).catch(function(error){
+    console.log(error);
+  });
+}*/
+
+/**
+ * Set the owners of the accounts we are splitting the ETH into
+ * @param owner1
+ * @param owner2
+ */
+function setOwners() {
+  if(isAddress(document.getElementById("a_address").value) && isAddress(document.getElementById("b_address").value)) {
+	 setStatus("Setting the owner accounts and unlocking if necessary... (please wait)");
+	  if (isProportionsValid()) {
+		setProportions();
+	  }
+	  else {
+		setStatus("Your proportion percentages need to add up to 100", "danger");
+		return;
+	  }
+  	 var revshare = RevShare.deployed();
+  	 revshare.setOwners.call(document.getElementById("a_address").value, document.getElementById("b_address").value,  {from:account}).then(function(data){
+  	  /*web3.eth.personal.unlockAccount(owner1, document.getElementById("a_password").value, 1000);
+	  web3.eth.personal.unlockAccount(owner2, document.getElementById("b_password").value, 1000);*/
+	  refreshBalances();
+	  document.getElementById("a_address").style.border = "1px solid green";
+	  document.getElementById("b_address").style.border = "1px solid green";
+	  document.getElementById("inputIconA").style.visibility = "hidden";
+	  document.getElementById("inputIconB").style.visibility = "hidden";
+	  setStatus("Owners set successfully", "success");
+	}).catch(function(error){
+		setStatus("Error setting owners: " + error, "danger");
+		console.log(error);
+  	}); 
+  }
+	else {
+		setStatus("1 or more addresses were not valid", "danger");
+	}
+}
+
+/**
+ * Checks if the given string is an address
+ *
+ * @method isAddress
+ * @param {String} address the given HEX adress
+ * @return {Boolean}
+*/
+var isAddress = function (address) {
+    if (!/^(0x)?[0-9a-f]{40}$/i.test(address)) {
+        // check if it has the basic requirements of an address
+		console.log("Address does not meet basic requirements");
+        return false;
+    } else if (/^(0x)?[0-9a-f]{40}$/.test(address) || /^(0x)?[0-9A-F]{40}$/.test(address)) {
+        // If it's all small caps or all all caps, return true
+        return true;
+    } else {
+        // Otherwise check each case
+        return isChecksumAddress(address);
+    }
+};
+/**
+ * Checks if the given string is a checksummed address
+ *
+ * @method isChecksumAddress
+ * @param {String} address the given HEX adress
+ * @return {Boolean}
+*/
+var isChecksumAddress = function (address) {
+    // Check each case
+    address = address.replace('0x','');
+    var addressHash = sha3(address.toLowerCase());
+    for (var i = 0; i < 40; i++ ) {
+        // the nth letter should be uppercase if the nth digit of casemap is 1
+        if ((parseInt(addressHash[i], 16) > 7 && address[i].toUpperCase() !== address[i]) || (parseInt(addressHash[i], 16) <= 7 && address[i].toLowerCase() !== address[i])) {
+            console.log("NotChecksumAddress");
+			return false;
+        }
+    }
+    return true;
+};
+
+/**
+ * Set the proportion percentages of distribution to the owners (recipients)
+ * @param owner1
+ * @param owner2
+ */
+function setProportions() {
+  	 var revshare = RevShare.deployed();
+  	 revshare.setProportions.call(parseInt(document.getElementById("a_portion").value), parseInt(document.getElementById("b_portion").value),  {from:account}).then(function(data){
+	  refreshBalances();
+	}).catch(function(error){
+		setStatus("Error setting proportion: " + error, "danger");
+		console.log(error);
+  	});
+}
+
+var isProportionsValid = function () {
+    var a = parseInt(document.getElementById("a_portion").value, 10);
+    var b = parseInt(document.getElementById("b_portion").value, 10);
+    if ( a + b == 100 ) {
+		return true;
+    }
+	else {
+		return false;
+	}
+}
+
+function killContract(){
+  var selectBox = document.getElementById('select-box');
+  var selectedAddr = selectBox.options[selectBox.selectedIndex].text;
+  RevShare.deployed().kill({from: selectedAddr}).then(function(result){
+    console.log(result);
+  });
+}
 
 function send() {
   var rs = RevShare.deployed();
@@ -5855,10 +5985,12 @@ window.onload = function() {
       alert("Couldn't get any accounts! Make sure your Ethereum client is configured correctly.");
       return;
     }
+	  
+      document.getElementById("select-box").innerHTML += '<option>' + RevShare.deployed_address + '</option>'
 
     accounts = accs;
     account = accounts[0];
-
+	  
     setAddress();
     refreshBalances();
   });

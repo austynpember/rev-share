@@ -20,25 +20,41 @@
       <tr>
         <th></th>
         <th>Address</th>
+		<th style="width: 20%;">Password</th>
         <th>Balance</th>
+		<th style="width: 12%;">Proportion %</th>
       </tr>
       <tr>
         <th>Contract</th>
         <td><span class="black"><span id="c_address" class="c_address"></span></span></td>
+		<td></td>
         <td><span class="black"><span id="c_balance"></span> ETH</span></td>
+		<td></td>
       </tr>
       <tr>
         <th>Recipient A</th>
-        <td><span class="black"><span id="a_address">0xf6549feb3bc3dcfc24b7b2b43aabb1b53169fb06</span></span></td>
-        <td><span class="black"><span id="a_balance"></span> ETH</span></td>
-      </tr>
+		<td><input style="height: 34px; border:1px solid red;" type="text" class="form-control" id="a_address" placeholder="Type address here"/></td>
+		<td><input style="height: 34px;" type="text" class="form-control" id="a_password" placeholder="Type password here"/></td>
+        <td><span class="black"><span id="a_balance"></span> ETH </span> <span class="glyphicon glyphicon-alert" id="inputIconA" aria-hidden="true" title="Owners need to be set before balance is available"></span></td>
+		<td><input style="height: 34px; width: 60%;" type="text" class="form-control" id="a_portion" placeholder="50" value="50"/></td>
+	  </tr>
       <tr>
         <th>Recipient B</th>
-        <td><span class="black"><span id="b_address">0x6c21c01e97374f324f863f73112207d4122eb08b</span></span></td>
-        <td><span class="black"><span id="b_balance"></span> ETH</span></td>
-      </tr>
+		<td><input style="height: 34px; border:1px solid red;" type="text" class="form-control" id="b_address" placeholder="Type address here"/></td>
+		<td><input style="height: 34px;" type="text" class="form-control" id="b_password" placeholder="Type password here"/></td>
+		<td><span class="black"><span id="b_balance"></span> ETH </span> <span class="glyphicon glyphicon-alert" id="inputIconB" aria-hidden="true" title="Owners need to be set before balance is available"></span></td>
+      	<td><input style="height: 34px; width: 60%;" type="text" class="form-control" id="b_portion" placeholder="50" value="50"/></td>
+	  </tr>
     </table>
-
+	
+	  <div class="row">
+		  <div class="col-lg-6"><span>Click to unlock and confirm owner accounts</span></div>
+		  <div class="col-lg-6 text-center"><button class="btn btn-primary btn-lg center-block" onclick="setOwners();">Set Recipients</button></div>
+	  </div>
+	  
+	  <div id="status" class="alert">
+	  </div>
+	  
     <div class="row">
       <h2 style="text-align: center; padding-top: 20px;">Pay Contract</h2>
       <div class="col-lg-6 payment payment-web">
@@ -53,8 +69,20 @@
         <div id="qr"></div>
       </div>
     </div>
+	  
+	<div class="row">
+      <h2 style="text-align: center; color: red;">Kill Contract</h2>
+			<div class="col-lg-2">
+				<button id="killButton" class="btn btn-lg" onclick="killContract()">Kill</button>
+			</div>
+      <div class="col-lg-10">
+        <select class="form-control" id="select-box"></select>
+      </div>
+    </div>
+	  
   </div>
   <!-- Latest compiled and minified JavaScript -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>

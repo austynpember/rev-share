@@ -1,7 +1,7 @@
 body {
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 4%;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -41,6 +41,8 @@ h3 {
 .black {
   color: black;
 }
+
+#status {}
 
 #balance {
   color: black;
